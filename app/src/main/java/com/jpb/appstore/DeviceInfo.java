@@ -36,7 +36,7 @@ public class DeviceInfo extends AppCompatActivity {
         });
         update.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(getApplicationContext(), UpdaterActivity.class);
+                Intent intent = new Intent(getApplicationContext(), NewUpdaterActivity.class);
                 startActivity(intent);
             }
         });

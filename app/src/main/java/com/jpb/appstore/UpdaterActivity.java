@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+@Deprecated
 public class UpdaterActivity extends AppCompatActivity {
 
     @Override
