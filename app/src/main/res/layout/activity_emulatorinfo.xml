@@ -52,13 +52,13 @@
                         android:id="@+id/textView24"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="1.0" />
+                        android:text="10.0.0.100" />
 
                     <TextView
                         android:id="@+id/textView25"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Beta" />
+                        android:text="DP2" />
 
                 </LinearLayout>
 
@@ -71,7 +71,7 @@
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:cardCornerRadius="20dp"
                     app:contentPadding="10dp">
@@ -90,24 +90,25 @@
 
                         <Spinner
                             android:id="@+id/spinner1"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:dropDownWidth="match_parent"
                             android:entries="@array/oems"
-                            android:saveEnabled="true" />
+                            android:saveEnabled="true"
+                            tools:ignore="TouchTargetSizeCheck" />
 
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:cardCornerRadius="20dp"
                     app:contentPadding="10dp">
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical">
 
@@ -120,7 +121,7 @@
 
                         <Spinner
                             android:id="@+id/spinner"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:dropDownWidth="match_parent"
                             android:entries="@array/devices"
@@ -131,7 +132,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:cardCornerRadius="20dp"
                     app:contentPadding="5dp">
