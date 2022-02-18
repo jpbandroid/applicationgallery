@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="oems">
+        <item>Google</item>
+        <item>Samsung</item>
+        <item>Huawei</item>
+        <item>LG</item>
+        <item>Asus</item>
+        <item>HTC</item>
+        <item>Motorola</item>
+    </string-array>
+    <string-array name="devices">
+        <item>Nexus One (HTC)</item>
+        <item>Nexus S (Samsung)</item>
+        <item>Galaxy Note (Samsung)</item>
+        <item>Galaxy Nexus (Samsung)</item>
+        <item>Nexus 4 (LG)</item>
+        <item>Nexus 5 (LG)</item>
+        <item>Galaxy S5 (Samsung)</item>
+        <item>Nexus 6 (Motorola)</item>
+        <item>Nexus 5X (LG)</item>
+        <item>Nexus 6P (Huawei)</item>
+        <item>Pixel (HTC/Google)</item>
+        <item>Pixel XL (HTC/Google)</item>
+        <item>Pixel 2 (HTC/Google)</item>
+        <item>Pixel 2 XL (LG/Google)</item>
+        <item>Pixel 3 (Google)</item>
+        <item>Pixel 3 XL (Google)</item>
+        <item>Pixel 3a (Google)</item>
+        <item>Pixel 3a XL (Google)</item>
+        <item>Pixel 4 (Google)</item>
+        <item>Pixel 4 XL (Google)</item>
+        <item>Galaxy Note10 (Samsung)</item>
+        <item>Pixel 4a (Google)</item>
+        <item>Pixel 4a 5G (Google)</item>
+        <item>Pixel 5 (Google)</item>
+        <item>Pixel C (Google)</item>
+        <item>Nexus 7 (Asus)</item>
+        <item>Nexus 7 2013 (Asus)</item>
+        <item>Nexus 10 (Samsung)</item>
+        <item>Nexus 9 (HTC)</item>
+    </string-array>
+</resources>
