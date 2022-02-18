@@ -12,6 +12,8 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="titleCentered">true</item>
+        <item name="actionBarTheme">@style/Theme.MaterialComponents.DayNight</item>
     </style>
     <style name="Theme.ST" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
