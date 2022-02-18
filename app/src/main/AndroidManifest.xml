@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ApplicationGallery">
         <activity
+            android:name=".NewUpdaterActivity"
+            android:exported="false"
+            android:label="@string/title_activity_new_updater"
+            android:theme="@style/Theme.ApplicationGallery.NoActionBar" />
+        <activity
             android:name=".alldev"
             android:exported="true" />
         <activity android:name=".UpdaterActivity" />
