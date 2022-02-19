@@ -39,7 +39,7 @@ public class NotesInfo extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        Button down = findViewById(R.id.button2);
+        Button down = findViewById(R.id.button14);
         down.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 DownloadManager downloadmanager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
@@ -49,7 +49,7 @@ public class NotesInfo extends AppCompatActivity {
                 request.setTitle("jpb Notes");
                 request.setDescription("Downloading");
                 request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
-                request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "jpbNote.apk");
+                request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "jpbNote.apks");
                 downloadmanager.enqueue(request);
             };
         });
