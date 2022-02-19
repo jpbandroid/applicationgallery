@@ -19,11 +19,11 @@ A clear and concise description of what you expected to happen.
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
 
-**Smartphone (please complete the following information):**
+**Hardware/Software context (please complete the following information):**
  - Device: [e.g. Redmi Note 8]
  - Android OS Version: [e.g. Android 11]
  - ApplicationGallery Version [e.g. 10.0.0.100]
- - Android skin (maybe) [eg. MIUI]
+ - Android skin (optional) [eg. MIUI]
 
 **Additional context**
 Add any other context about the problem here.
