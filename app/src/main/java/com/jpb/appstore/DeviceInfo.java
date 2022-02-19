@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.jpb.appstore.oss.license.OSSLicense;
+
 public class DeviceInfo extends AppCompatActivity {
 
     @Override
@@ -37,6 +39,13 @@ public class DeviceInfo extends AppCompatActivity {
         update.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Intent intent = new Intent(getApplicationContext(), NewUpdaterActivity.class);
+                startActivity(intent);
+            }
+        });
+        TextView textViewOSS  = findViewById(R.id.textView33);
+        textViewOSS.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(getApplicationContext(), OSSLicense.class);
                 startActivity(intent);
             }
         });

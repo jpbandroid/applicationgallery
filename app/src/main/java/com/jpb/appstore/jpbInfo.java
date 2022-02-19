@@ -21,6 +21,13 @@ public class jpbInfo extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        CardView stmd3card = findViewById(R.id.stmd3card);
+        stmd3card.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(getApplicationContext(), STmd3Info.class);
+                startActivity(intent);
+            }
+        });
         CardView notecard = findViewById(R.id.notescard);
         notecard.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){

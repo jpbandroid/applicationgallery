@@ -63,7 +63,7 @@
                             android:id="@+id/textView25"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="DP3" />
+                            android:text="Beta 1" />
 
                     </LinearLayout>
 
@@ -176,7 +176,7 @@
                         android:id="@+id/textView6"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Using an AVD? If you are, try out the link below"
+                        android:text="Need other info?"
                         app:drawableLeftCompat="@drawable/ic_info" />
 
                     <TextView
@@ -186,6 +186,15 @@
                         android:autoLink="all"
                         android:fontFamily="sans-serif-medium"
                         android:text="AVD/Emulator Info"
+                        android:textColor="#0888f9" />
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autoLink="all"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Open source licenses"
                         android:textColor="#0888f9" />
                 </LinearLayout>
 

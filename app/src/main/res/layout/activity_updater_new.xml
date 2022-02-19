@@ -29,7 +29,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 app:layout_collapseMode="pin"
-                app:popupTheme="@style/Theme.ApplicationGallery.PopupOverlay" />
+                app:popupTheme="@style/Theme.ApplicationGallery.PopupOverlay"
+                app:title="ApplicationGallery Updater" />
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>

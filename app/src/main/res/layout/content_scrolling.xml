@@ -7,51 +7,53 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".NewUpdaterActivity"
     tools:showIn="@layout/activity_updater_new">
-    <LinearLayout
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/updateuicore"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="256dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
                 android:id="@+id/imageView5"
-                android:layout_width="128dp"
+                android:layout_width="match_parent"
                 android:layout_height="128dp"
-                app:layout_constraintBottom_toBottomOf="@id/textView21"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@mipmap/ic_launcher" />
 
             <TextView
                 android:id="@+id/textView21"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="ApplicationGallery 10"
+                android:textAlignment="center"
                 android:textSize="24sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView26"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="10.0.0.100 DP2"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/textView21" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                android:text="10.0.0.100 Beta 1"
+                android:textAlignment="center" />
+        </LinearLayout>
 
         <Button
             android:id="@+id/button13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Check for updates" />
-    </LinearLayout>
+            android:text="Check for updates"
+            app:layout_constraintBottom_toBottomOf="@id/updateuicore"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
