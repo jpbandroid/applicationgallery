@@ -57,7 +57,7 @@ fun MainLayout() {
                     // We use TopAppBar from accompanist-insets-ui which allows us to provide
                     // content padding matching the system bars insets.
                     TopAppBar(
-                        title = { Text("Compose Sample") },
+                        title = { Text("Open Source Licenses") },
                         backgroundColor = MaterialTheme.colors.surface.copy(alpha = 0.9f),
                         contentPadding = rememberInsetsPaddingValues(
                             LocalWindowInsets.current.statusBars,

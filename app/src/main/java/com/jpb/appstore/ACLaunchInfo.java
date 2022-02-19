@@ -1,13 +1,10 @@
 package com.jpb.appstore;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
 
-import android.Manifest;
 import android.app.DownloadManager;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -16,14 +13,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.io.File;
+public class ACLaunchInfo extends AppCompatActivity {
 
-public class STmd3Info extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_stmd3info);
-        this.setTitle("ScratchTappy md3");
+        setContentView(R.layout.activity_aclaunchinfo);
+        this.setTitle("Activity Launcher");
         String versionRelease = Build.VERSION.RELEASE;
         TextView textView = findViewById(R.id.textView17);
         textView.setText("Your device is running Android " + versionRelease);
@@ -47,14 +43,15 @@ public class STmd3Info extends AppCompatActivity {
         down.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 DownloadManager downloadmanager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
-                Uri uri = Uri.parse("https://occoam.com/jpb/wp-content/uploads/app-release-3.apk");
+                Uri uri = Uri.parse("https://occoam.com/jpb/wp-content/uploads/ActivityLauncherApp-release.apk");
 
                 DownloadManager.Request request = new DownloadManager.Request(uri);
-                request.setTitle("ScratchTappy md3");
+                request.setTitle("jpb Activity Launcher");
                 request.setDescription("Downloading");
                 request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
-                request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "ScratchTappymd3.apk");
+                request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "jpbACLaunch.apk");
                 downloadmanager.enqueue(request);
-        };
-    });
-}}
+            };
+        });
+    }
+}

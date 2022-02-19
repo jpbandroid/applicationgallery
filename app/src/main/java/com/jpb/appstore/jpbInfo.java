@@ -35,5 +35,12 @@ public class jpbInfo extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        CardView accard = findViewById(R.id.aclcard);
+        accard.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(getApplicationContext(), ACLaunchInfo.class);
+                startActivity(intent);
+            }
+        });
     }
 }

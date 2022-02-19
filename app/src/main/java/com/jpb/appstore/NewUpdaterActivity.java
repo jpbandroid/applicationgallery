@@ -1,27 +1,34 @@
 package com.jpb.appstore;
 
+import android.content.Context;
 import android.os.Bundle;
 
+import com.github.javiersantos.appupdater.AppUpdater;
+import com.github.javiersantos.appupdater.enums.Display;
+import com.github.javiersantos.appupdater.enums.UpdateFrom;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
+import android.widget.Button;
 
 import com.jpb.appstore.databinding.ActivityUpdaterNewBinding;
 
 public class NewUpdaterActivity extends AppCompatActivity {
 
-    private ActivityUpdaterNewBinding binding;
+    private Context mContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.mContext = this;
 
-        binding = ActivityUpdaterNewBinding.inflate(getLayoutInflater());
+        com.jpb.appstore.databinding.ActivityUpdaterNewBinding binding = ActivityUpdaterNewBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         Toolbar toolbar = binding.toolbar;
@@ -33,8 +40,19 @@ public class NewUpdaterActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Tap, Tap, Tap!", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+            }
+        });
+        Button update = binding.button13;
+        update.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                new AppUpdater(mContext)
+                        .setUpdateFrom(UpdateFrom.XML)
+                        .setUpdateXML("https://occoam.com/jpb/wp-content/uploads/updater.xml")
+                        .setDisplay(Display.DIALOG)
+                        .start();
             }
         });
     }

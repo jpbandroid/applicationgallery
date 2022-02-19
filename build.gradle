@@ -10,6 +10,9 @@ buildscript {
         maven {
             url 'https://dl.bintray.com/ayz4sci/maven/'
         }
+        maven {
+            url "https://jitpack.io"
+        }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:7.1.1'
@@ -25,7 +28,10 @@ allprojects {
     repositories {
         google()
         mavenCentral()
-        jcenter() // Warning: this repository is going to shut down soon
+        jcenter()// Warning: this repository is going to shut down soon
+        maven {
+            url "https://jitpack.io"
+        }
     }
 }
 
