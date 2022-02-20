@@ -31,8 +31,7 @@
 
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:layout_height="match_parent">
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/st"
@@ -83,7 +82,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:orientation="horizontal">
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/games"
@@ -130,7 +129,7 @@
 
                             <ImageView
                                 android:id="@+id/imageView10"
-                                android:layout_width="106dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="94dp"
                                 app:srcCompat="@drawable/aclauncher" />
 
@@ -146,7 +145,8 @@
                                 android:id="@+id/textView40"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="3.06 MB" />
+                                android:text="3.06 MB"
+                                android:textAlignment="center" />
                         </LinearLayout>
 
                     </androidx.cardview.widget.CardView>

@@ -74,6 +74,11 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(getApplicationContext(), NotesInfo.class);
             startActivity(intent);
         });
+        CardView app4 = findViewById(R.id.games2);
+        app4.setOnClickListener((View.OnClickListener) view -> {
+            Intent intent = new Intent(getApplicationContext(), ACLaunchInfo.class);
+            startActivity(intent);
+        });
         Button update = findViewById(R.id.button);
         update.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
