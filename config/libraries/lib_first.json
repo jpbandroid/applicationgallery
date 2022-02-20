@@ -1,0 +1,11 @@
+{
+  "uniqueId": "com.jpb.appstore",
+  "developers": ["jpb"],
+  "artifactVersion": "10.0.0.100",
+  "description": "A simple app store that retrieves APKs from my website (occoam.com/jpb) and saves them on your internal storage for install",
+  "name": "ApplicationGallery",
+  "tag": "custom",
+  "licenses": [
+    "Apache-2.0"
+  ]
+}
