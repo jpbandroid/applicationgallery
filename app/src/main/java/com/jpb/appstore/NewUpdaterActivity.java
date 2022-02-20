@@ -49,8 +49,8 @@ public class NewUpdaterActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 new AppUpdater(mContext)
-                        .setUpdateFrom(UpdateFrom.XML)
-                        .setUpdateXML("https://occoam.com/jpb/wp-content/uploads/updater.xml")
+                        .setUpdateFrom(UpdateFrom.GITHUB)
+                        .setGitHubUserAndRepo("jpbandroid", "applicationgallery")
                         .setDisplay(Display.DIALOG)
                         .start();
             }
