@@ -144,7 +144,7 @@
                         android:id="@+id/textView15"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="6.65 MB" />
+                        android:text="6.67 MB" />
 
                     <TextView
                         android:id="@+id/textView16"
