@@ -87,7 +87,7 @@
                     android:id="@+id/textView26"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="10.0.0.100 RC1"
+                    android:text="10.0.0.100"
                     android:textAlignment="center" />
             </LinearLayout>
 
