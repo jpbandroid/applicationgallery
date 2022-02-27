@@ -100,4 +100,5 @@ dependencies {
     implementation 'com.github.javiersantos:AppUpdater:2.7'
     implementation 'com.github.javiersantos:MaterialStyledDialogs:3.0.1'
     implementation 'com.google.android.gms:play-services-oss-licenses:17.0.0'
+    implementation 'com.github.jpbandroid:downloadapi:v1.1.1'
 }
