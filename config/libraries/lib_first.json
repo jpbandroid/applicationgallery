@@ -1,10 +1,13 @@
 {
-  "uniqueId": "com.jpb.appstore",
-  "developers": ["jpb"],
-  "artifactVersion": "10.0.0.100",
-  "description": "A simple app store that retrieves APKs from my website (occoam.com/jpb) and saves them on your internal storage for install",
+  "uniqueId": "com.jpb.appstore:github",
+  "developers": [{
+    "name": "jpb",
+    "organisationUrl": "https://occoam.com/jpb"
+  }],
+  "artifactVersion": "10.0.0.300",
+  "description": "FOSS appstore for jpb Apps, MIUI apps, and other OEM and FOSS apps.",
   "name": "ApplicationGallery",
-  "tag": "custom",
+  "tag": "app",
   "licenses": [
     "Apache-2.0"
   ]
