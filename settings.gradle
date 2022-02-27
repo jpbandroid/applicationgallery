@@ -1,2 +1,3 @@
 rootProject.name = "ApplicationGallery"
 include ':app'
+include ':miui12styleabout'
