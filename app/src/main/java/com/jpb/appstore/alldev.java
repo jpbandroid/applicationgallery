@@ -22,5 +22,12 @@ public class alldev extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button otherdev = findViewById(R.id.button12);
+        otherdev.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(getApplicationContext(), OtherDevInfo.class);
+                startActivity(intent);
+            }
+        });
     }
 }

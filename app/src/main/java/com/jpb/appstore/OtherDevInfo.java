@@ -7,17 +7,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class jpbInfo extends AppCompatActivity {
+public class OtherDevInfo extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_jpb_info);
-        this.setTitle("Apps by jpb");
-        CardView stcard = findViewById(R.id.stcard);
+        setContentView(R.layout.activity_other_dev_info);
+        this.setTitle("Apps by other devs");
+        CardView stcard = findViewById(R.id.saicard);
         stcard.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(getApplicationContext(), STInfo.class);
+                Intent intent = new Intent(getApplicationContext(), SAIInfo.class);
                 startActivity(intent);
             }
         });
@@ -39,13 +39,6 @@ public class jpbInfo extends AppCompatActivity {
         accard.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Intent intent = new Intent(getApplicationContext(), ACLaunchInfo.class);
-                startActivity(intent);
-            }
-        });
-        CardView jpbmusiccard = findViewById(R.id.jpbmusiccard);
-        jpbmusiccard.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                Intent intent = new Intent(getApplicationContext(), jpbMusicInfo.class);
                 startActivity(intent);
             }
         });
