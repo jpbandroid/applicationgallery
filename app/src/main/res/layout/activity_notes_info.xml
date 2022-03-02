@@ -112,7 +112,17 @@
                             android:id="@+id/textView35"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="WARINING: This is a Split APK file. Use SAI to install." />
+                            android:text="Install this app using" />
+
+                        <TextView
+                            android:id="@+id/textView43"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=" SAI"
+                            android:textColor="#0888F9"
+                            android:textStyle="bold" />
+
                     </LinearLayout>
 
                 </LinearLayout>

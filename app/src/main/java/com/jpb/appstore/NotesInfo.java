@@ -39,6 +39,13 @@ public class NotesInfo extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        TextView sai = findViewById(R.id.textView43);
+        sai.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(getApplicationContext(), SAIInfo.class);
+                startActivity(intent);
+            }
+        });
         Button down = findViewById(R.id.button14);
         down.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
