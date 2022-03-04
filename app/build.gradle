@@ -95,9 +95,8 @@ dependencies {
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_version"
     implementation 'com.google.accompanist:accompanist-insets-ui:0.23.0'
     implementation 'com.google.accompanist:accompanist-systemuicontroller:0.23.0'
-    implementation 'com.mikepenz:aboutlibraries-core:10.0.0-rc01'
-    implementation 'com.mikepenz:aboutlibraries-compose:10.0.0-rc01'
-    implementation 'com.github.javiersantos:AppUpdater:2.7'
+    implementation 'com.mikepenz:aboutlibraries-core:10.0.0-rc02'
+    implementation 'com.mikepenz:aboutlibraries-compose:10.0.0-rc02'
     implementation 'com.github.javiersantos:MaterialStyledDialogs:3.0.1'
     implementation 'com.google.android.gms:play-services-oss-licenses:17.0.0'
     implementation 'com.github.jpbandroid:downloadapi:v1.1.1'
