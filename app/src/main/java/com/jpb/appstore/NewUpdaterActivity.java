@@ -28,10 +28,6 @@ import com.jpb.appstore.databinding.ActivityUpdaterNewBinding;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import p32929.updaterlib.AppUpdater;
-import p32929.updaterlib.UpdateListener;
-import p32929.updaterlib.UpdateModel;
-
 public class NewUpdaterActivity extends AppCompatActivity {
 
     private Context mContext;
