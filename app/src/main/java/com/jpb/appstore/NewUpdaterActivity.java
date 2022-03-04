@@ -45,7 +45,7 @@ public class NewUpdaterActivity extends AppCompatActivity {
         update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                //TODO: Insert app updater framework code here
             }
         });
     }
