@@ -11,7 +11,7 @@ android {
         applicationId "com.jpb.appstore"
         minSdk 21
         targetSdk 32
-        versionCode 1001
+        versionCode 1000
         versionName "10.0.1.100"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -100,4 +100,5 @@ dependencies {
     implementation 'com.github.javiersantos:MaterialStyledDialogs:3.0.1'
     implementation 'com.google.android.gms:play-services-oss-licenses:17.0.0'
     implementation 'com.github.jpbandroid:downloadapi:v1.1.1'
+    implementation 'com.github.p32929:AndroidAppUpdater:1.0.2'
 }
