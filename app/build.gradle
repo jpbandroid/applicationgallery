@@ -11,8 +11,8 @@ android {
         applicationId "com.jpb.appstore"
         minSdk 21
         targetSdk 32
-        versionCode 1000
-        versionName "10.0.0.300"
+        versionCode 1001
+        versionName "10.0.1.100"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
