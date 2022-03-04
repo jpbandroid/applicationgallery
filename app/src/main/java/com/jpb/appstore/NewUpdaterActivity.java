@@ -58,41 +58,7 @@ public class NewUpdaterActivity extends AppCompatActivity {
         update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new AppUpdater(NewUpdaterActivity.this, "https://occoam.com/jpb/wp-content/uploads/appggaljson.json", new UpdateListener() {
-                    @Override
-                    public void onJsonDataReceived(final UpdateModel updateModel, JSONObject jsonObject) {
-                        if (AppUpdater.getCurrentVersionCode(NewUpdaterActivity.this) < updateModel.getVersionCode()) {
-                            new MaterialAlertDialogBuilder(NewUpdaterActivity.this)
-                                    .setTitle("Update available")
-                                    .setCancelable(updateModel.isCancellable())
-                                    .setPositiveButton("Update", new DialogInterface.OnClickListener() {
-                                        @Override
-                                        public void onClick(DialogInterface dialog, int which) {
-                                            DownloadManager downloadmanager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
-                                            Uri uri = Uri.parse("https://occoam.com/jpb/wp-content/uploads/https://occoam.com/jpb/wp-content/uploads/ApplicationGallery.apk");
 
-                                            DownloadManager.Request request = new DownloadManager.Request(uri);
-                                            try {
-                                                request.setTitle("ApplicationGallery " + jsonObject.getJSONObject("versionName"));
-                                            } catch (JSONException e) {
-                                                e.printStackTrace();
-                                            }
-                                            request.setDescription("Downloading");
-                                            request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
-                                            request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "ApplicationGalleryUpdate.apk");
-                                            downloadmanager.enqueue(request);
-                                        }
-                                    })
-                                    .show();
-                        }
-                    }
-
-                    @Override
-                    public void onError(String error) {
-                        // Do something
-
-                    }
-                }).execute();
             }
         });
     }
