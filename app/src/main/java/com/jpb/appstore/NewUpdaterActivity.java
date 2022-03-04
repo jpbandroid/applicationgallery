@@ -7,6 +7,9 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 
+import com.github.javiersantos.appupdater.AppUpdater;
+import com.github.javiersantos.appupdater.enums.Display;
+import com.github.javiersantos.appupdater.enums.UpdateFrom;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -58,7 +61,11 @@ public class NewUpdaterActivity extends AppCompatActivity {
         update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                new AppUpdater(mContext)
+                        .setUpdateFrom(UpdateFrom.GITHUB)
+                        .setGitHubUserAndRepo("jpbandroid", "applicationgallery")
+                        .setDisplay(Display.DIALOG)
+                        .start();
             }
         });
     }
