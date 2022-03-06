@@ -56,7 +56,7 @@
                             android:id="@+id/textView8"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="March 2, 2022" />
+                            android:text="March 6, 2022" />
 
                         <View
                             android:id="@+id/divider2"
@@ -69,7 +69,7 @@
                             android:id="@+id/textView9"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="9.98 MB" />
+                            android:text="3.16 MB" />
 
                         <View
                             android:id="@+id/divider3"
