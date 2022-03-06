@@ -241,13 +241,13 @@
                         android:id="@+id/textView40"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="9.98 MB" />
+                        android:text="3.16 MB" />
 
                     <TextView
                         android:id="@+id/textView41"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Mar 2, 2022" />
+                        android:text="Mar 6, 2022" />
                 </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
