@@ -11,8 +11,8 @@ android {
         applicationId "com.jpb.appstore"
         minSdk 21
         targetSdk 32
-        versionCode 1000
-        versionName "10.0.1.100"
+        versionCode 1001
+        versionName "10.0.1.300"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -93,8 +93,8 @@ dependencies {
     implementation 'androidx.browser:browser:1.4.0'
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_version"
-    implementation 'com.google.accompanist:accompanist-insets-ui:0.23.0'
-    implementation 'com.google.accompanist:accompanist-systemuicontroller:0.23.0'
+    implementation 'com.google.accompanist:accompanist-insets-ui:0.23.1'
+    implementation 'com.google.accompanist:accompanist-systemuicontroller:0.23.1'
     implementation 'com.mikepenz:aboutlibraries-core:10.0.0'
     implementation 'com.mikepenz:aboutlibraries-compose:10.0.0'
     implementation 'com.github.javiersantos:MaterialStyledDialogs:3.0.1'
