@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".STmd3Info">
+    tools:context=".UspInfo">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -24,7 +24,7 @@
                     android:id="@+id/imageView2"
                     android:layout_width="90dp"
                     android:layout_height="100dp"
-                    app:srcCompat="@drawable/stmd3" />
+                    app:srcCompat="@drawable/drawable" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -36,7 +36,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-light"
-                        android:text="ScratchTappy md3"
+                        android:text="Unified ScratchTappy Platform"
                         android:textSize="20sp" />
 
                     <TextView
@@ -56,7 +56,7 @@
                             android:id="@+id/textView8"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Jan 31, 2022" />
+                            android:text="Aug 30, 2022" />
 
                         <View
                             android:id="@+id/divider2"
@@ -69,7 +69,7 @@
                             android:id="@+id/textView9"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="29.83 MB" />
+                            android:text="22.73 MB" />
 
                         <View
                             android:id="@+id/divider3"
@@ -82,43 +82,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Target API 32" />
-
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:id="@+id/imageView8"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            app:srcCompat="@drawable/ic_round_warning_24"
-                            app:tint="#FFEB3B" />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:id="@+id/textView35"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="This app is discontinued. It is now replaced by " />
-
-                            <TextView
-                                android:id="@+id/textView43"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="USP"
-                                android:textColor="#0888F9"
-                                android:textStyle="bold" />
-                        </LinearLayout>
-
+                            android:text="Target API 33" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -146,7 +110,7 @@
                         android:id="@+id/textView15"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="ScratchTappy md3 is the Material Design 3 version of ST (the ST codebase is completely rebuilt!)" />
+                        android:text="Unified ScratchTappy Platform is the successor to ScratchTappy and ScratchTappy md3, built on the codebase of ScratchTappy md3." />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -192,4 +156,5 @@
                 app:icon="@drawable/ic_download" />
         </LinearLayout>
     </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

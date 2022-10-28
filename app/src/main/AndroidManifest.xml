@@ -15,16 +15,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ApplicationGallery">
         <activity
+            android:name=".UspInfo"
+            android:exported="false"
+            android:theme="@style/Theme.ST">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".OtherDevInfo"
             android:exported="false" />
         <activity
             android:name=".jpbMusicInfo"
             android:exported="false"
-            android:theme="@style/Theme.jpbMusic"/>
+            android:theme="@style/Theme.jpbMusic" />
         <activity
             android:name=".SAIInfo"
             android:exported="false"
-            android:theme="@style/Theme.SAI"/>
+            android:theme="@style/Theme.SAI" />
         <activity
             android:name=".ACLaunchInfo"
             android:exported="false"

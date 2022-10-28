@@ -49,5 +49,12 @@ public class jpbInfo extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        CardView uspcard = findViewById(R.id.uspcard);
+        uspcard.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(getApplicationContext(), UspInfo.class);
+                startActivity(intent);
+            }
+        });
     }
 }

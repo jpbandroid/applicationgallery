@@ -1,13 +1,10 @@
 package com.jpb.appstore;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
 
-import android.Manifest;
 import android.app.DownloadManager;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -16,14 +13,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.io.File;
+public class UspInfo extends AppCompatActivity {
 
-public class STmd3Info extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_stmd3info);
-        this.setTitle("ScratchTappy md3");
+        setContentView(R.layout.activity_usp_info);
+        this.setTitle("Unified ScratchTappy Platform");
         String versionRelease = Build.VERSION.RELEASE;
         TextView textView = findViewById(R.id.textView17);
         textView.setText("Your device is running Android " + versionRelease);
@@ -43,25 +39,19 @@ public class STmd3Info extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        TextView usp = findViewById(R.id.textView43);
-        usp.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                Intent intent = new Intent(getApplicationContext(), UspInfo.class);
-                startActivity(intent);
-            }
-        });
         Button down = findViewById(R.id.button2);
         down.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 DownloadManager downloadmanager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
-                Uri uri = Uri.parse("https://occoam.com/jpb/wp-content/uploads/app-release-3.apk");
+                Uri uri = Uri.parse("https://github.com/jpbandroid/USP/releases/download/8.1/app-release.apk");
 
                 DownloadManager.Request request = new DownloadManager.Request(uri);
-                request.setTitle("ScratchTappy md3");
+                request.setTitle("Unified ScratchTappy Platform");
                 request.setDescription("Downloading");
                 request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
-                request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "ScratchTappymd3.apk");
+                request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "UnifiedScratchTappy.apk");
                 downloadmanager.enqueue(request);
-        };
-    });
-}}
+            };
+        });
+    }
+}

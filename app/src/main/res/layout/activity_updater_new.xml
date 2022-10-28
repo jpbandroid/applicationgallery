@@ -78,7 +78,7 @@
                     android:id="@+id/textView21"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="ApplicationGallery 10"
+                    android:text="ApplicationGallery 11"
                     android:textAlignment="center"
                     android:textSize="24sp"
                     android:textStyle="bold" />
@@ -87,7 +87,7 @@
                     android:id="@+id/textView26"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="10.0.1.100"
+                    android:text="11.0.0.100"
                     android:textAlignment="center" />
             </LinearLayout>
 

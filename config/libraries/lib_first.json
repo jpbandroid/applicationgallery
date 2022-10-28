@@ -4,7 +4,7 @@
     "name": "jpb",
     "organisationUrl": "https://occoam.com/jpb"
   }],
-  "artifactVersion": "10.0.1.100",
+  "artifactVersion": "11.0.0.100",
   "description": "FOSS appstore for jpb Apps, MIUI apps, and other OEM and FOSS apps.",
   "name": "ApplicationGallery",
   "tag": "app",
